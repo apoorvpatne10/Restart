@@ -6,11 +6,6 @@ DBMS mini-project 1st Sem. It's a fictious service center where users can keep t
 
 It's better to work with this sample in a virtual environment so that you don't mess with the existing python packages. If you don't have virtualenv, open a terminal window and install it by typing this:
 
-    * Bullet list
-        * Nested bullet
-            * Sub-nested bullet etc
-    * Bullet list item 2
-
 ```
 sudo apt install virtualenv
 ```
@@ -28,6 +23,19 @@ mkdir py-env
 ```
 
 Navigate in the newly created directory:
+
 ```
 cd python-environments
+```
+
+Create a virtual environment in Python 3 with the environment name of env:
+
+```
+virtualenv -p python3 env
+```
+
+Validate that environment is installed with python3:
+
+```
+ls env/lib
 ```
