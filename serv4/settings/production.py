@@ -94,10 +94,11 @@ WSGI_APPLICATION = 'serv4.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'four',
-        # 'USER': 'apoorv',
-        # 'PASSWORD': 'password',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'four',
+        'USER': 'apoorv',
+        'PASSWORD': 'password',
+        'HOST': 'restart5.herokuapp.com',
     }
 }
 
