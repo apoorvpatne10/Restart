@@ -1,17 +1,20 @@
 import datetime
-AWS_ACCESS_KEY_ID = "AKIAJEBKKJ3IM4CKI6QA"
-AWS_SECRET_ACCESS_KEY = "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"
+from decouple import config
+
+
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
 
-# DEFAULT_FILE_STORAGE = 'serv4.aws.utils.MediaRootS3BotoStorage'
+DEFAULT_FILE_STORAGE = 'serv4.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'serv4.aws.utils.StaticRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'apoorv2'
 S3DIRECT_REGION = 'us-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-# MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
-# MEDIA_ROOT = MEDIA_URL
+MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
+MEDIA_ROOT = MEDIA_URL
 STATIC_URL = S3_URL + 'static/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
