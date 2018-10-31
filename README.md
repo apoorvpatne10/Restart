@@ -52,7 +52,19 @@ ls env/lib
 source env/bin/activate
 ```
 
-Deactivate the same by simply typing 'deactivate'
+Make sure you're in the home directory of the project (that is, wherever the manage.py file is present). Now, install the required dependencies via :
+
+```
+pip install -r requirements.txt
+```
+
+Deactivate the virtual environment by simply typing 'deactivate'
 
 
-## 
+## Demo
+
+Run the project on localhost by typing this into the terminal : 
+
+```
+python manage.py runserver
+```
