@@ -4,6 +4,7 @@ include/
 pip-selfcheck.json
 
 serv4/settings/local.py
+serv4/settings/local2.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
