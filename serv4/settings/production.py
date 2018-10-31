@@ -19,13 +19,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'apoorvwatsky@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Your Name <you@gmail.com>'
+
+ADMINS = (
+        'You' : 'you@email.com'
+    )
+MANAGERS = ADMINS
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#peg!8$i(qn2z=8vn!n_bqqkazjtdcr8lkoo(5#bxs*8%kely='
+SECRET_KEY = os.environ.get('SECRET_KEY', '#peg!8$i(qn2z=8vn!n_bqqkazjtdcr8lkoo(5#bxs*8%kely=')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['restartx.herokuapp.com']
 
 
 # Application definition
@@ -88,6 +100,10 @@ DATABASES = {
     }
 }
 
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+# DATABASES['default']['CONN_MAX_AGE'] = 500
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
