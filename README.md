@@ -58,7 +58,7 @@ Make sure you're in the home directory of the project (that is, wherever the man
 pip install -r requirements.txt
 ```
 
-Deactivate the virtual environment by simply typing 'deactivate'
+If you want to deactivate virtualenv, do it by simply typing 'deactivate'.
 
 
 ## Demo
