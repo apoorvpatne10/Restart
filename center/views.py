@@ -60,9 +60,6 @@ def bill_info(request):
                     min_price_prod = j.price
                     min_price_prodname = j.brand
 
-
-
-    # print(request.user)
     prod_name = max_price_prodname
     prod_name_min = min_price_prodname
 
@@ -83,7 +80,6 @@ def bill_info(request):
         'min_price_prod' : min_price_prod,
         'total_pricex' : total_price,
         'current_customer' : current_customer
-        # 'max_price_prod' : max_price_prod
     }
 
     return render(request, 'center/bill_info.html', context)
@@ -116,11 +112,6 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
 
 class RepairCreateView(LoginRequiredMixin, CreateView):
     model = Repair
-    # CHOICES = (
-    #     ('1', 'Software'),
-    #     ('2', 'Hardware'),
-    #     ('3', 'Both')
-    # )
     template_name = 'center/product_repair.html'
     fields = ['product_type', 'brand','phone_number', 'option_field','description', 'address']
 
@@ -244,21 +235,18 @@ class BaseContextMixin(ContextMixin):
 
         current_customer = 'default'
         for j in data1:
-            # print(j.customer)
             if j.customer == self.request.user:
                 current_customer = j.customer
         context_data['current_customer'] = current_customer
 
         current_customer2 = 'default'
         for j in data2:
-            # print(j.customer)
             if j.customer == self.request.user:
                 current_customer2 = j.customer
         context_data['current_customer2'] = current_customer2
 
         current_customer3 = 'default'
         for j in data3:
-            # print(j.customer)
             if j.customer == self.request.user:
                 current_customer3 = j.customer
         context_data['current_customer3'] = current_customer3
@@ -271,19 +259,7 @@ class ReportListView(BaseContextMixin, TemplateView, LoginRequiredMixin):
 
     def get_context_data(self, **kwargs):
         context_data = super(ReportListView, self).get_context_data(**kwargs)
-        # tempx = context_data
-        # print(tempx)
         return context_data
 
 
 
-# class StatusListView(LoginRequiredMixin, ListView):
-#     model = Repair
-#     template_name = 'center/status_check.html'
-
-#     def get_context_data(self, **kwargs):
-#         context_data = {}
-#         context_data["data"] = Repair.objects.all()
-#         for i in Repair.objects.all():
-
-#         return context_data
