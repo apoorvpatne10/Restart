@@ -10,8 +10,8 @@ STATICFILES_STORAGE = 'serv4.aws.utils.StaticRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'apoorv2'
 S3DIRECT_REGION = 'us-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
-MEDIA_ROOT = MEDIA_URL
+# MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
+# MEDIA_ROOT = MEDIA_URL
 STATIC_URL = S3_URL + 'static/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
