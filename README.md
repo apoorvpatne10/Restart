@@ -1,6 +1,12 @@
 # Restart
 
-DBMS mini-project 1st Sem. It's a fictious service center where users can keep track of their gadgets and miscellaneous repair requests/complaints. Database used is MySql. A quick demo of this project can be seen [here](https://restartx.herokuapp.com/center/). It was made within a week before deadline, so don't expect much with this.
+DBMS mini-project 1st Sem. It's a fictious service center where users can keep track of their gadgets and miscellaneous repair requests/complaints. Database used is MySql. A quick demo of this project can be seen [here](https://restartx.herokuapp.com/center/). If you'd like to try it locally on your machine follow the steps below: 
+
+## Built With
+
+* [Django](https://docs.djangoproject.com/en/2.1/) - Web framework used
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - For designing pages 
+* [Heroku](https://devcenter.heroku.com/categories/reference#deployment) - For working with project in production
 
 ## Prerequisites
 
@@ -48,3 +54,5 @@ source env/bin/activate
 
 Deactivate the same by simply typing 'deactivate'
 
+
+## 
