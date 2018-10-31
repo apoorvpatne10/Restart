@@ -1,5 +1,6 @@
 serv4/settings/local2.py
 
+.gitignore
 .DS_Store
 bin/
 include/
