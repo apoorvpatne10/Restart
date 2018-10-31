@@ -93,12 +93,12 @@ WSGI_APPLICATION = 'serv4.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'four',
-    #     'USER': 'apoorv',
-    #     'PASSWORD': 'password',
-    # }
+    'default': {
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'four',
+        # 'USER': 'apoorv',
+        # 'PASSWORD': 'password',
+    }
 }
 
 import dj_database_url
