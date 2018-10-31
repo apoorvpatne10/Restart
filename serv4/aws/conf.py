@@ -5,7 +5,7 @@ AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
 
-DEFAULT_FILE_STORAGE = 'serv4.aws.utils.MediaRootS3BotoStorage'
+# DEFAULT_FILE_STORAGE = 'serv4.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'serv4.aws.utils.StaticRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'apoorv2'
 S3DIRECT_REGION = 'us-west-2'
