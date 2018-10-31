@@ -39,3 +39,12 @@ Validate that environment is installed with python3:
 ```
 ls env/lib
 ```
+
+## Activate Environment
+
+```
+source env/bin/activate
+```
+
+Deactivate the same by simply typing 'deactivate'
+
