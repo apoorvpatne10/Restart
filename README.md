@@ -1,6 +1,6 @@
 # Restart
 
-DBMS mini-project 1st Sem. It's a fictious service center where users can keep track of their gadgets and miscellaneous repair requests/complaints. Database used is MySql. A quick demo of this project can be seen [here] (https://restartx.herokuapp.com/center/). It was made within a week before deadline, so don't expect much with this.
+DBMS mini-project 1st Sem. It's a fictious service center where users can keep track of their gadgets and miscellaneous repair requests/complaints. Database used is MySql. A quick demo of this project can be seen [here](https://restartx.herokuapp.com/center/). It was made within a week before deadline, so don't expect much with this.
 
 ## Prerequisites
 
