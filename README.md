@@ -31,7 +31,7 @@ mkdir py-env
 Navigate in the newly created directory:
 
 ```
-cd python-environments
+cd py-env
 ```
 
 Create a virtual environment in Python 3 with the environment name of env:
