@@ -63,6 +63,12 @@ If you want to deactivate virtualenv, do it by simply typing 'deactivate'.
 
 ## Demo
 
+Create the database by doing this : 
+
+```
+python manage.py migrate
+```
+
 Run the project on localhost by typing this into the terminal :
 
 ```
